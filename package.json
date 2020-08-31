@@ -1,0 +1,38 @@
+{
+  "name": "cypress_visual",
+  "version": "1.0.0",
+  "description": "Cypress Visual Test",
+  "main": "index.js",
+  "dependencies": {
+    "@percy/cypress": "^2.3.1",
+    "cypress": "^5.0.0",
+    "cypress-image-snapshot": "^3.1.1",
+    "lodash": "^4.17.20",
+    "prettier": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-visual-tests": "cypress run",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:run-test-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
+    "cy:run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false",
+    "cy:percy": "percy exec -- cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinsakpal87/cypress_visual.git"
+  },
+  "keywords": [
+    "cypress",
+    "visual",
+    "testing",
+    "snapshots"
+  ],
+  "author": "Sachin Sakpal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinsakpal87/cypress_visual/issues"
+  },
+  "homepage": "https://github.com/sachinsakpal87/cypress_visual#readme"
+}

@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/node_modules/
+.idea/workspace.xml
+cypress/snapshots/cypress_visual/data-tables.spec.js/.DS_Store
+cypress/snapshots/cypress_visual/image.spec.js/__diff_output__/
+node_modules/
+package-lock.json
+.idea/.gitignore
+cypress/.snapshot-report
